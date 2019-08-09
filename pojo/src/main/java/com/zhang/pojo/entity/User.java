@@ -1,0 +1,53 @@
+package com.zhang.pojo.entity;
+
+import com.zhang.pojo.base.BaseAuditable;
+import lombok.Data;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 作者: LCG
+ * 日期: 2019/8/4 15:18
+ * 描述: 用户信息描述
+ */
+@Data
+@Entity
+@Table(name = "base_user")
+public class User extends BaseAuditable {
+
+    @Column(name = "userName")
+   private String userName;
+
+    @Column(name = "loginName")
+   private String loginName;
+
+    @Column(name = "password")
+   private String password;
+
+    @Column(name = "tel")
+   private String tel;
+
+    @Column(name = "sex")
+   private int sex;
+
+    @Column(name = "parentId")
+    private Long parentId;
+
+    @Column(name = "imgUrl")
+    private String imgUrl;
+
+    @Transient
+    private List<Menu> menuList;
+
+    @Transient
+    private Role role;
+
+    @Transient
+    private Map<String,String> authmap;
+
+}

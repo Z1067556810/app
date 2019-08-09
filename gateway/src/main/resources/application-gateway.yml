@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+         - id: manger-server
+           uri: lb://manger-server
+           predicates:
+           - Path=/api/manager/**
+           filters: #表示去掉api前缀
+             - StripPrefix=2
+
+         - id: SSO-SERVER
+           uri: lb://sso-server
+           predicates:
+           - Path=/sso/auth/**
+           - Cookie=authcode, (.*)
+           filters:
+             - StripPrefix=2
