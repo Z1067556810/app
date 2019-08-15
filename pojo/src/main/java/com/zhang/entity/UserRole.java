@@ -1,4 +1,4 @@
-package com.zhang.pojo.entity;
+package com.zhang.entity;
 
 import lombok.Data;
 

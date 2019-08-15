@@ -32,37 +32,41 @@ public class GlobalFilters implements GlobalFilter {
     private String loginPath;
 
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String,String> redisTemplate;
 
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
+        //获取路径
         String url = request.getURI().toString();
         String replace = url.replace("http://localhost:10000/", "");
-        System.out.println("////"+replace);
-        List<String> string = Arrays.asList(url);
-        if (string.contains(url)){
+        System.out.println("////" + replace);
+        List<String> string = Arrays.asList(urls);
+        if (string.contains(url)) {
             return chain.filter(exchange);
-        }else{
+        } else {
             List<String> token = request.getHeaders().get("token");
-            JSONObject jsonObject=null;
-            try{
+            System.out.println(token+"....");
+            JSONObject jsonObject = null;
+            try {
                 jsonObject = JWTUtils.decodeJwtToken(token.get(0));
                 String token1 = JWTUtils.generateToken(jsonObject.toJSONString());
-                response.getHeaders().set("token",token1);
-            }catch (JwtException e){
+                System.out.println(token1+"zzz");
+                response.getHeaders().set("token", token1);
+            } catch (JwtException e) {
                 e.printStackTrace();
-                response.getHeaders().set("Location",loginPath);
+                response.getHeaders().set("Location", loginPath);
                 response.setStatusCode(HttpStatus.SEE_OTHER);
                 return exchange.getResponse().setComplete();
             }
-            String userId = jsonObject.get("id").toString();
-            System.out.println(userId+"----------");
-            Boolean isok = redisTemplate.opsForHash().hasKey("USERDATAAUTH" + userId, replace);
-            System.out.println(isok+"___-----");
-            if (isok){
+            String id = jsonObject.get("id").toString();
+            System.out.println(jsonObject.get("userName"));
+            System.out.println(id + "----------");
+            Boolean isok = redisTemplate.opsForHash().hasKey("USERDATAAUTH" + id, replace);
+            System.out.println(isok + "___-----");
+            if (isok) {
                 return chain.filter(exchange);
-            }else{
+            } else {
                 throw new RuntimeException("不能访问该资源！");
             }
         }

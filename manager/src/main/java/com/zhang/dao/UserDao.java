@@ -1,11 +1,12 @@
 package com.zhang.dao;
 
-import com.zhang.pojo.entity.User;
+import com.zhang.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -18,4 +19,5 @@ public interface UserDao extends JpaRepository<User,Long> {
     public User findByLoginName(String loginName);
     @Query(value = "select bu.* from base_user_role bur INNER JOIN base_user bu ON bur.userId = bu.id where bur.roleId = ?1",nativeQuery = true)
     public List<User> getUserInfoByRoleId(Long roleId);
+    public int countByLoginName(String name);
 }

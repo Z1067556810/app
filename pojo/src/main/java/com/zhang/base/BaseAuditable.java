@@ -1,4 +1,4 @@
-package com.zhang.pojo.base;
+package com.zhang.base;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;

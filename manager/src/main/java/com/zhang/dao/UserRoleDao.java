@@ -1,6 +1,6 @@
 package com.zhang.dao;
 
-import com.zhang.pojo.entity.UserRole;
+import com.zhang.entity.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 

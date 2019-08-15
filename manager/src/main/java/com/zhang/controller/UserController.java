@@ -1,11 +1,12 @@
 
 package com.zhang.controller;
 
-import com.zhang.pojo.ResponseResult;
-import com.zhang.pojo.entity.Menu;
-import com.zhang.pojo.entity.Role;
-import com.zhang.pojo.entity.User;
+import com.zhang.ResponseResult;
+import com.zhang.entity.Menu;
+import com.zhang.entity.Role;
+import com.zhang.entity.User;
 import com.zhang.service.UserService;
+import net.coobird.thumbnailator.Thumbnails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -31,6 +32,12 @@ import java.util.Map;
 public class UserController {
     @Autowired
     UserService uService;
+
+    /**
+     * 用户列表
+     * @param map
+     * @return
+     */
     @RequestMapping("getUserList")
     @ResponseBody
     public ResponseResult userList(@RequestBody Map<String,Object> map){
@@ -48,12 +55,26 @@ public class UserController {
         results.setResult(map1);
         return results;
     }
+
+    /**
+     * 上传图片
+     * @param file
+     * @throws IOException
+     */
     @RequestMapping("upload")
     @ResponseBody
     public void upload(@RequestParam("file")MultipartFile file) throws IOException {
         String filename = file.getOriginalFilename();
-        file.transferTo(new File("F:/image/"+filename));
+        File file1 = new File(filename);
+        file.transferTo(file1);
+        Thumbnails.of(filename).scale(0.25f).toFile(file1.getAbsolutePath() + "_25%.jpg");
     }
+
+    /**
+     * 根据id删除用户
+     * @param map
+     * @return
+     */
     @RequestMapping("deleteUserById")
     @ResponseBody
     public ResponseResult deleteUserById(@RequestBody Map<String,Object> map){
@@ -67,26 +88,47 @@ public class UserController {
         }
         return results;
     }
+
+    /**
+     * 添加用户
+     * @param user
+     * @return
+     */
     @RequestMapping("addUser")
     @ResponseBody
     public ResponseResult addUser(@RequestBody User user){
         ResponseResult results=ResponseResult.getResponseResult();
-        if (user!=null){
-            user.setPassword(MD5.encryptPassword(user.getPassword(),"lcg"));
-            uService.addUser(user);
-            results.setCode(200);
-            results.setSuccess("添加成功");
-        }else{
-            results.setError("添加失败");
+        String loginName = user.getLoginName();
+        if (user!=null) {
+            int i = uService.checkedUserLoginName(loginName);
+            if (i>0){
+                user.setPassword(MD5.encryptPassword(user.getPassword(), "lcg"));
+                uService.addUser(user);
+                results.setCode(200);
+                results.setSuccess("新增成功");
+            }else {
+                results.setError("此用户已注册");
+            }
         }
         return results;
     }
+
+    /**
+     * 修改用户
+     * @param user
+     * @return
+     */
     @RequestMapping("updateUser")
     @ResponseBody
     public ResponseResult updateUser(@RequestBody User user){
         ResponseResult results=ResponseResult.getResponseResult();
         if (user!=null){
-            uService.addUser(user);
+            int i = uService.checkedUserLoginName(user.getLoginName());
+            if (i>0){
+                results.setCode(500);
+                results.setError("登录名已存在");
+                return results;
+            }
             results.setCode(200);
             results.setSuccess("修改成功");
         }else {
@@ -94,6 +136,12 @@ public class UserController {
         }
         return results;
     }
+
+    /**
+     * 绑定角色
+     * @param map
+     * @return
+     */
     @RequestMapping("putRoleByUserId")
     @ResponseBody
     public ResponseResult putRoleByUserId(@RequestBody Map<String,Object> map){

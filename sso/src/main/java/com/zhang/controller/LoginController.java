@@ -2,8 +2,8 @@ package com.zhang.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.zhang.pojo.ResponseResult;
-import com.zhang.pojo.entity.User;
+import com.zhang.ResponseResult;
+import com.zhang.entity.User;
 import com.zhang.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 @Controller
 public class LoginController {
     @Autowired
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String,String> redisTemplate;
     @Autowired
     LoginService lService;
 
@@ -66,17 +66,16 @@ public class LoginController {
                     //通过id获取的用户信息设置给token
                     redisTemplate.opsForValue().set("USER"+user.getId().toString(),token);
                     //通过id获取用户信息存储到map里
-                    redisTemplate.opsForHash().putAll(user.getId().toString(),user.getAuthmap());
+                    redisTemplate.opsForHash().putAll("USERDATAAUTH"+user.getId().toString(),user.getAuthmap());
                     System.out.println(user.getId().toString()+"<><><><><><>");
                     System.out.println(user.getAuthmap()+"><><><><><><>");
                     //过期时间
-                    redisTemplate.expire("USER"+user.getId().toString(),10000, TimeUnit.SECONDS);
+                    redisTemplate.expire("USER"+user.getId().toString(),1, TimeUnit.SECONDS);
                     results.setResult(user);
                     results.setCode(200);
                     results.setSuccess("登录成功！^_^");
                     System.out.println(results);
                     return results;
-
                 }else{
                     throw new LoginException("用户名或密码错误");
                 }
@@ -114,7 +113,16 @@ public class LoginController {
         response.addCookie(cookie);
         return results;
     }
-
+    //退出登录
+    @RequestMapping("loginout")
+    @ResponseBody
+    public ResponseResult loginout(@RequestBody Map<String,Object> map){
+        ResponseResult results=ResponseResult.getResponseResult();
+        redisTemplate.delete("USER"+map.get("id").toString());
+        results.setCode(200);
+        results.setSuccess("ok");
+        return results;
+    }
     /**
      * 手动加载密码
      * @param args

@@ -23,8 +23,5 @@ public class GateWayServer {
         System.out.println("=========gateway server check health is ok! ^_^ ========");
         return "ok";
     }
-    @Bean(name = "myAddrReslover")
-    public Reslover reslover(){
-        return new Reslover();
-    }
+
 }

@@ -1,7 +1,7 @@
 package com.zhang.controller;
-import com.zhang.pojo.ResponseResult;
-import com.zhang.pojo.entity.Menu;
-import com.zhang.pojo.entity.Role;
+import com.zhang.ResponseResult;
+import com.zhang.entity.Menu;
+import com.zhang.entity.Role;
 import com.zhang.service.RoleService;
 import com.zhang.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.List;
@@ -26,6 +25,12 @@ public class RoleController {
     RoleService rService;
     @Autowired
     UserService uService;
+
+    /**
+     * 角色列表
+     * @param map
+     * @return
+     */
     @RequestMapping("getRoleList")
     @ResponseBody
     public ResponseResult getUserList(@RequestBody Map<String,Object> map){
@@ -40,7 +45,14 @@ public class RoleController {
         results.setResult(map1);
         return results;
     }
+
+    /**
+     * 根据id删除角色
+     * @param map
+     * @return
+     */
     @RequestMapping("deleteRoleById")
+    @ResponseBody
     public ResponseResult deleteRoleById(@RequestBody Map<String,Object> map){
         ResponseResult results=ResponseResult.getResponseResult();
         if (map!=null&&map.get("id")!=null){
@@ -52,10 +64,22 @@ public class RoleController {
         }
         return results;
     }
+
+    /**
+     * 添加角色
+     * @param role
+     * @return
+     */
     @RequestMapping("addRole")
+    @ResponseBody
     public ResponseResult addRole(@RequestBody Role role){
         ResponseResult results=ResponseResult.getResponseResult();
         if (role!=null){
+            int i = rService.checkedRoleName(role.getRoleName());
+            if (i>0){
+                results.setCode(500);
+                results.setError("角色名已存在");
+            }
             rService.addRole(role);
             results.setCode(200);
             results.setSuccess("角色添加成功");
@@ -64,19 +88,14 @@ public class RoleController {
         }
         return  results;
     }
-    @RequestMapping("updateRole")
-    public ResponseResult updateRole(@RequestBody Role role){
-        ResponseResult results=ResponseResult.getResponseResult();
-        if (role!=null){
-            rService.addRole(role);
-            results.setCode(200);
-            results.setSuccess("角色修改成功");
-        }else{
-            results.setError("角色修改失败");
-        }
-        return results;
-    }
+
+    /**
+     * 绑定菜单
+     * @param map
+     * @return
+     */
     @RequestMapping("putMenuByRoleId")
+    @ResponseBody
     public ResponseResult putMenuByRoleId(@RequestBody Map<String,Object> map){
         ResponseResult results=ResponseResult.getResponseResult();
         if (map!=null){

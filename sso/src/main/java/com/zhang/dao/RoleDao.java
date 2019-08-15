@@ -1,10 +1,8 @@
 package com.zhang.dao;
 
-import com.zhang.pojo.entity.Role;
+import com.zhang.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
-import javax.management.relation.RoleInfo;
 
 /**
  * @author 张会丽

@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93159240-9780-40bd-8133-9c5310115ef7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/exception/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/jwt/JWTUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/random/VerifyCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/AESUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/UID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Reslover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-ribbon.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/exception/LoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/jwt/JWTUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/random/VerifyCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/utils/AESUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/utils/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/utils/TwitterIdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/common/src/main/java/com/zhang/utils/UID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/GateWayServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/config/Configs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/config/Reslover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/filter/GateWayFilters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/resources/application-gateway.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/resources/application-ribbon.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/base/BaseAuditable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/entity/RoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/pojos/src/main/java/com.zhang/entity/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/Sso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/java/com/zhang/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/sso/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/Yewu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/dao/RoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/java/com/zhang/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/yewu/yewu.iml" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/bei1.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/bei5.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/chakan.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/create.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/daoru.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/error.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.eot" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.svg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/font/iconfont.woff" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/logo.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/tiku.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/timg.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/xiaotubiao/iconfont.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/xiaotubiao/iconfont.eot" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/xiaotubiao/iconfont.svg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/xiaotubiao/iconfont.ttf" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/xiaotubiao/iconfont.woff" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/assets/yun.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/domain.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/js/utils.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/view/login/login.vue" afterDir="false" />
+      <change afterPath="F:/vue/demo/src/view/shouye/shouye.vue" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/internal.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/index.html" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/config.json" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/controller.jsp" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/lib/json.jar" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/jsp/lib/ueditor-1.1.2.jar" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/en.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/themes/iframe.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/ueditor.all.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/ueditor.config.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/ueditor.parse.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/UE/ueditor.parse.min.js" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/aiya.mp3" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/dahuaxiyou.mp3" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/en.mp3" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/qingsongk.mp3" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/tishiyin.mp3" afterDir="false" />
+      <change afterPath="F:/vue/demo/static/tishiyin/yiliuyan.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/bei1.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/bei5.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/chakan.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/create.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/daoru.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/error.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.eot" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.svg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/font/iconfont.woff" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/logo.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/sss.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/tiku.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/timg.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/xiaotubiao/iconfont.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/xiaotubiao/iconfont.eot" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/xiaotubiao/iconfont.svg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/xiaotubiao/iconfont.ttf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/xiaotubiao/iconfont.woff" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/assets/yun.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/js/utils.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/store/gloable.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/store/store.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/login/login.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/datamain.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/datamenu.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/roleList.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/shouye.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/system.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/src/view/shouye/userList.vue" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/anchor/anchor.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/attachment.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/attachment.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/attachment.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_chm.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_default.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_doc.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_exe.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_jpg.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_mp3.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_mv.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_pdf.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_ppt.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_psd.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_rar.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_txt.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/fileTypeImages/icon_xls.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/alignicon.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/alignicon.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/file-icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/file-icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/attachment/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/background/background.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/background/background.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/background/background.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/background/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/background/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/chart.config.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/charts.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/charts.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/charts.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts0.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts1.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts2.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts3.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts4.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/charts/images/charts5.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/emotion.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/emotion.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/emotion.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/0.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/bface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/cface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/fface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/jxface2.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/tface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/wface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/emotion/images/yface.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/gmap/gmap.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/help/help.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/help/help.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/help/help.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/image.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/image.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/image.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/alignicon.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/image/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/insertframe/insertframe.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/internal.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/link/link.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/map/map.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/map/show.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/music/music.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/music/music.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/music/music.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/preview/preview.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/addimg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/brush.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/delimg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/delimgH.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/empty.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/emptyH.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/eraser.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/redo.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/redoH.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/scale.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/scaleH.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/size.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/undo.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/images/undoH.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/scrawl.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/scrawl.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/scrawl/scrawl.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/searchreplace/searchreplace.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/searchreplace/searchreplace.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/snapscreen/snapscreen.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/spechars/spechars.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/spechars/spechars.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/dragicon.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/edittable.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/edittable.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/edittable.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/edittd.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/table/edittip.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/config.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/bg.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/pre0.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/pre1.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/pre2.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/pre3.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/images/pre4.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/template.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/template.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/template/template.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/center_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/file-icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/file-icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/image.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/left_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/none_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/progress.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/right_focus.jpg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/success.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/images/success.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/video.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/video.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/video/video.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/webapp/webapp.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/wordimage/fClipboard_ueditor.swf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/wordimage/imageUploader.swf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/wordimage/tangram.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/wordimage/wordimage.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/dialogs/wordimage/wordimage.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/index.html" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/config.json" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/controller.jsp" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/lib/json.jar" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/jsp/lib/ueditor-1.1.2.jar" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/en.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/addimage.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/alldeletebtnhoverskin.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/alldeletebtnupskin.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/background.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/button.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/copy.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/deletedisable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/deleteenable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/listbackground.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/localimage.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/music.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/rotateleftdisable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/rotateleftenable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/rotaterightdisable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/rotaterightenable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/en/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/zh-cn/images/copy.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/zh-cn/images/localimage.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/zh-cn/images/music.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/zh-cn/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/lang/zh-cn/zh-cn.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/css/ueditor.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/css/ueditor.min.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/dialogbase.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/anchor.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/arrow.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/arrow_down.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/arrow_up.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/button-bg.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/cancelbutton.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/charts.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/cursor_h.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/cursor_h.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/cursor_v.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/cursor_v.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/dialog-title-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/filescan.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/highlighted.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/icons-all.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/icons.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/icons.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/loaderror.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/lock.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/neweditor-tab-bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/pagebreak.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/scale.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/sortable.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/spacer.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/sparator_v.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/table-cell-align.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/tangram-colorpicker.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/toolbar_bg.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/unhighlighted.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/upload.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/videologo.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/word.gif" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/default/images/wordpaste.png" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/themes/iframe.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/SyntaxHighlighter/shCoreDefault.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/highcharts-more.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/highcharts.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/highcharts.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/annotations.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/data.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/data.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/drilldown.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/exporting.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/funnel.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/heatmap.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/map.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/map.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/themes/dark-green.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/themes/gray.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/themes/grid.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/highcharts/themes/skies.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/jquery-1.10.2.min.map" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/snapscreen/UEditorSnapscreen.exe" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/font/vjs.eot" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/font/vjs.svg" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/font/vjs.ttf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/font/vjs.woff" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/video-js.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/video-js.min.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/video-js.swf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/video.dev.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/video-js/video.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/Uploader.swf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.css" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.custom.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/third-party/zeroclipboard/ZeroClipboard.swf" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/ueditor.all.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/ueditor.all.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/ueditor.config.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/ueditor.parse.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/UE/ueditor.parse.min.js" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/aiya.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/dahuaxiyou.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/en.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/qingsongk.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/tishiyin.mp3" afterDir="false" />
+      <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/yiliuyan.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Configs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GateWayFilters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/base/BaseAuditable.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/base/BaseAuditable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/RoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sso/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="F:/vue/demos" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/sso/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <ignored path="$PROJECT_DIR$/gateway/target/" />
+    <ignored path="$PROJECT_DIR$/pojo/target/" />
+    <ignored path="$PROJECT_DIR$/manager/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-165">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java" />
+        <option value="$PROJECT_DIR$/pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/base/BaseAuditable.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/MenuInfo.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/RoleInfo.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LongService.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/User.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Menu.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/PerManApp.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml" />
+        <option value="$PROJECT_DIR$/manager/src/main/resources/aaa.xml" />
+        <option value="$PROJECT_DIR$/manager/src/main/resources/mapper/a.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/a/a.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/a.xml.tld" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/zhang/jwt/JWTUtils.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/sso/pom.xml" />
+        <option value="$PROJECT_DIR$/manager/pom.xml" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../CMS/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="F:\Nwt\CMS\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="87" />
+    <option name="width" value="1673" />
+    <option name="height" value="875" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhang" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565840631453" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zhang.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\service" />
+      <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\dao" />
+      <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\controller" />
+      <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang" />
+      <recent name="F:\Nwt\eclipse\demos\manager\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Manage">
+    <configuration name="GateWayServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhang.GateWayServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Manage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhang.Manage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sso" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sso" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhang.Sso" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93159240-9780-40bd-8133-9c5310115ef7" name="Default Changelist" comment="" />
+      <created>1565319100869</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565319100869</updated>
+      <workItem from="1565319104467" duration="4661000" />
+      <workItem from="1565330940588" duration="11307000" />
+      <workItem from="1565347213081" duration="4985000" />
+      <workItem from="1565397019458" duration="11753000" />
+      <workItem from="1565521692778" duration="2740000" />
+      <workItem from="1565570098097" duration="9986000" />
+      <workItem from="1565589778143" duration="12021000" />
+      <workItem from="1565607765723" duration="2614000" />
+      <workItem from="1565611810017" duration="3879000" />
+      <workItem from="1565653344061" duration="10988000" />
+      <workItem from="1565676607890" duration="1943000" />
+      <workItem from="1565692802594" duration="2259000" />
+      <workItem from="1565736900919" duration="6210000" />
+      <workItem from="1565762031611" duration="6738000" />
+      <workItem from="1565780343276" duration="1108000" />
+      <workItem from="1565788527515" duration="881000" />
+      <workItem from="1565825413149" duration="9275000" />
+    </task>
+    <task id="LOCAL-00001" summary="后台">
+      <created>1565353644416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565353644416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="103348000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.19101876" />
+      <window_info id="Structure" order="1" sideWeight="0.5020243" side_tool="true" weight="0.19101876" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49691835" visible="true" weight="0.30028328" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.19688386" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030817" side_tool="true" weight="0.22535211" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3274648" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="后台" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/random/VerifyCodeUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/exception/LoginException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/aaa.xml" />
+    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/mapper/a.xml" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a/a.xml" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/z.xml" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a.zml.tld" />
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a.xml.tld" />
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/base/BaseAuditable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Reslover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Configs.java" />
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GateWayFilters.java" />
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.7.RELEASE/spring-data-redis-2.0.7.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13927">
+          <caret line="90" column="51" lean-forward="true" selection-start-line="90" selection-start-column="51" selection-end-line="90" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/jwt/JWTUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-ribbon.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1504">
+          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1674">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1579#1580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1724">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,6 +1,6 @@
 package com.zhang.dao;
 
-import com.zhang.pojo.entity.User;
+import com.zhang.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

@@ -1,20 +1,16 @@
-package com.zhang.pojo.entity;
+package com.zhang.entity;
 
-import com.zhang.pojo.base.BaseAuditable;
+import com.zhang.base.BaseAuditable;
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-/**
- * 作者: LCG
- * 日期: 2019/8/4 15:18
- * 描述: 用户信息描述
- */
 @Data
 @Entity
 @Table(name = "base_user")
@@ -40,6 +36,12 @@ public class User extends BaseAuditable {
 
     @Column(name = "imgUrl")
     private String imgUrl;
+
+    @Column(name = "createTime")
+    private Date createTime;
+
+    @Column(name = "updateTime")
+    private Date updateTime;
 
     @Transient
     private List<Menu> menuList;

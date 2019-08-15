@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableJpaAuditing
 @SpringBootApplication
 @RestController
-@EntityScan(basePackages = {"com.zhang.pojo.**"})
+@EntityScan(basePackages = {"com.zhang.**"})
 public class Manage {
 
   public static void main(String[] args) {

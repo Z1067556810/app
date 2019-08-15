@@ -1,13 +1,14 @@
 package com.zhang.service;
 
 import com.zhang.dao.*;
-import com.zhang.pojo.entity.Menu;
-import com.zhang.pojo.entity.Role;
-import com.zhang.pojo.entity.RoleMenu;
+import com.zhang.entity.Menu;
+import com.zhang.entity.Role;
+import com.zhang.entity.RoleMenu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,12 @@ public class RoleService {
     UserRoleDao urDao;
     @Autowired
     RoleMenuDao rmDao;
+
+    /**
+     * 获取角色列表
+     * @param map
+     * @return
+     */
     public Page<Role> getRole(Map<String,Object> map){
         Integer page=0;
         Integer pageSize=5;
@@ -43,12 +50,27 @@ public class RoleService {
         }
         return all;
     }
+
+    /**
+     * 根据id删除角色
+     * @param id
+     */
     public void deleteRoleById(long id){
         rDao.deleteById(id);
     }
+
+    /**
+     * 添加角色
+     * @param role
+     */
     public void addRole(Role role){
         rDao.save(role);
     }
+
+    /**
+     * 菜单集合
+     * @return
+     */
     public List<Menu> getAllMenu(){
         List<Menu> all = mDao.findAll();
         List<Menu> menus=new ArrayList<>();
@@ -60,6 +82,12 @@ public class RoleService {
         this.getForMenu(menus,all);
         return menus;
     }
+
+    /**
+     * 递归获取菜单
+     * @param list
+     * @param menuList
+     */
     public void getForMenu(List<Menu> list,List<Menu> menuList){
         for (Menu menu:list){
             List<Menu> menus=new ArrayList<>();
@@ -75,6 +103,11 @@ public class RoleService {
             }
         }
     }
+
+    /**
+     * 绑定角色
+     * @param map
+     */
     public void putMenuByRoleId(Map<String,Object> map){
         if (map.get("roleId")!=null&&map.get("menuId")!=null){
             rmDao.deleteByRoleId(Long.parseLong(map.get("roleId").toString()));
@@ -86,5 +119,9 @@ public class RoleService {
                 rmDao.save(roleMenu);
             }
         }
+    }
+    public int checkedRoleName(String roleName) {
+        int i = rDao.countByRoleName(roleName);
+        return i;
     }
 }

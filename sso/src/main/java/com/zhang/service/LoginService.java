@@ -3,9 +3,9 @@ package com.zhang.service;
 import com.zhang.dao.MenuDao;
 import com.zhang.dao.RoleDao;
 import com.zhang.dao.UserDao;
-import com.zhang.pojo.entity.Menu;
-import com.zhang.pojo.entity.Role;
-import com.zhang.pojo.entity.User;
+import com.zhang.entity.Menu;
+import com.zhang.entity.Role;
+import com.zhang.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -26,7 +26,12 @@ public class LoginService {
     RoleDao rDao;
     @Autowired
     MenuDao mDao;
-    //登录
+
+    /**
+     * 登录
+     * @param loginname
+     * @return
+     */
     public User login(String loginname) {
         User userInfo = uDao.findByLoginName(loginname);
         if(userInfo != null){
@@ -50,6 +55,12 @@ public class LoginService {
         return userInfo;
     }
 
+    /**
+     * 递归获取菜单
+     * @param list
+     * @param map
+     * @param allMenus
+     */
     public void getForMenuInfo(List<Menu> list, Map<String, String> map,List<Menu> allMenus){
         for (Menu menuInfo : list) {
             if(menuInfo.getLeval() == 4){
