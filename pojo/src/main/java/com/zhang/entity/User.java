@@ -7,7 +7,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -34,22 +33,30 @@ public class User extends BaseAuditable {
     @Column(name = "parentId")
     private Long parentId;
 
-    @Column(name = "imgUrl")
-    private String imgUrl;
+    @Column(name = "imageUrl")
+    private String imageUrl;
 
-    @Column(name = "createTime")
-    private Date createTime;
+    @Column(name = "email")
+    private String email;
 
-    @Column(name = "updateTime")
-    private Date updateTime;
+    @Column(name = "code")
+    private String code;
 
     @Transient
     private List<Menu> menuList;
 
     @Transient
+    private String roleName;
+    //实体类中使用了@Table注解后，想要添加表中不存在的字段，
+    // 就要使用@Transient这个注解了。
+    @Transient
     private Role role;
-
+    @Transient
+    private List<Role> roleList;
     @Transient
     private Map<String,String> authmap;
-
+    @Transient
+    private Object[] dengnumkey;//天数信息
+    @Transient
+    private Object[] dengnumvalues;//每天登录数
 }

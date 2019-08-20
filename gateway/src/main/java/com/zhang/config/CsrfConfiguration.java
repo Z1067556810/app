@@ -22,7 +22,7 @@ public class CsrfConfiguration {
 
         private static final String ALLOWED_HEADERS = "x-requested-with,Content-Type,Authorization,credential,token,";
         private static final String ALLOWED_METHODS = "*";
-        private static final String ALLOWED_ORIGIN = "http://localhost:8080";
+        private static final String ALLOWED_ORIGIN = "https://127.0.0.1:8080";
         private static final String ALLOWED_Expose = "*";
         private static final String MAX_AGE = "18000L";
 

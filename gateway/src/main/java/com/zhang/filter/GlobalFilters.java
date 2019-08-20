@@ -39,12 +39,13 @@ public class GlobalFilters implements GlobalFilter {
         ServerHttpResponse response = exchange.getResponse();
         //获取路径
         String url = request.getURI().toString();
-        String replace = url.replace("http://localhost:10000/", "");
+        String replace = url.replace("https://localhost:10000/", "");
         System.out.println("////" + replace);
-        List<String> string = Arrays.asList(urls);
+        List<String> string = Arrays.asList(url);
         if (string.contains(url)) {
             return chain.filter(exchange);
         } else {
+            //获取请求头中的token
             List<String> token = request.getHeaders().get("token");
             System.out.println(token+"....");
             JSONObject jsonObject = null;
@@ -52,7 +53,7 @@ public class GlobalFilters implements GlobalFilter {
                 jsonObject = JWTUtils.decodeJwtToken(token.get(0));
                 String token1 = JWTUtils.generateToken(jsonObject.toJSONString());
                 System.out.println(token1+"zzz");
-                response.getHeaders().set("token", token1);
+               response.getHeaders().set("token", token1);
             } catch (JwtException e) {
                 e.printStackTrace();
                 response.getHeaders().set("Location", loginPath);

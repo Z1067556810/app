@@ -29,4 +29,6 @@ public class Menu extends BaseAuditable {
     @Transient
     private List<Menu> menuList;
 
+    @Transient
+    private Long []ids;
 }

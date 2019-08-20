@@ -4,13 +4,18 @@ import com.zhang.dao.*;
 import com.zhang.entity.Menu;
 import com.zhang.entity.Role;
 import com.zhang.entity.RoleMenu;
+import com.zhang.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -46,7 +51,7 @@ public class RoleService {
         Page<Role> all = rDao.getByRoleNameLike("%" + map.get("mohu") + "%", PageRequest.of(page, pageSize));
         for (Role role:all){
             role.setMenuList(mDao.getByRoleId(role.getId()));
-            role.setUserList(uDao.getUserInfoByRoleId(role.getId()));
+            role.setUserList(uDao.getUserByRoleId(role.getId()));
         }
         return all;
     }
@@ -109,13 +114,13 @@ public class RoleService {
      * @param map
      */
     public void putMenuByRoleId(Map<String,Object> map){
-        if (map.get("roleId")!=null&&map.get("menuId")!=null){
+        if (map.get("roleId")!=null&&map.get("menuIds")!=null){
             rmDao.deleteByRoleId(Long.parseLong(map.get("roleId").toString()));
-            String[] menuIds = map.get("menuId").toString().split(",");
+            String[] menuIds = map.get("menuIds").toString().split(",");
             for (String menuId:menuIds){
                 RoleMenu roleMenu=new RoleMenu();
                 roleMenu.setRoleId(Long.parseLong(map.get("roleId").toString()));
-                roleMenu.setRoleId(Long.parseLong(menuId));
+                roleMenu.setMenuId(Long.parseLong(menuId));
                 rmDao.save(roleMenu);
             }
         }

@@ -18,13 +18,16 @@ import java.util.Set;
  * @create 2019/8/12
  */
 @Component
+@Transactional
 public class MenuService {
+
     @Autowired
     MenuDao mDao;
     @Autowired
     RoleMenuDao rmDao;
     @Autowired
     RoleDao rDao;
+    //根据id删除菜单
     @Transactional
     public void deleteMenuById(String[] ids) {
         for (String id : ids) {
@@ -33,14 +36,8 @@ public class MenuService {
         }
 
     }
-
-    public int checkedMenuName(String menuName) {
-        int i = mDao.countByMenuName(menuName);
-        return i;
-    }
-
+    //获取此菜单的权限
     public Set<Role> getRoleByMenuId(String[] ids) {
-
         Set<Role> set = new HashSet<>();
         for (String id : ids) {
             List<Role> roleByMenuId = rDao.getRoleByMenuId(Long.parseLong(id));
@@ -50,6 +47,7 @@ public class MenuService {
         }
         return set;
     }
+
     public void addMenu(Menu menu){
         mDao.save(menu);
     }

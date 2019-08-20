@@ -1,9 +1,11 @@
 package com.zhang.controller;
 import com.zhang.ResponseResult;
+import com.zhang.dao.MenuDao;
 import com.zhang.entity.Menu;
 import com.zhang.entity.Role;
 import com.zhang.service.RoleService;
 import com.zhang.service.UserService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -20,12 +22,12 @@ import java.util.Map;
  * @create 2019/8/8
  */
 @Controller
+@Api(tags = "This is RoleController")
 public class RoleController {
     @Autowired
     RoleService rService;
     @Autowired
     UserService uService;
-
     /**
      * 角色列表
      * @param map
@@ -35,9 +37,11 @@ public class RoleController {
     @ResponseBody
     public ResponseResult getUserList(@RequestBody Map<String,Object> map){
         ResponseResult results=ResponseResult.getResponseResult();
+        //获取所有的角色
         Page<Role> role = rService.getRole(map);
         Menu menu = uService.findMenuById(5L);
         Map<String,Object> map1=new HashMap<>();
+        //获取所有的菜单
         List<Menu> list = rService.getAllMenu();
         map1.put("role",role);
         map1.put("menu",menu);
@@ -45,7 +49,6 @@ public class RoleController {
         results.setResult(map1);
         return results;
     }
-
     /**
      * 根据id删除角色
      * @param map
@@ -56,6 +59,7 @@ public class RoleController {
     public ResponseResult deleteRoleById(@RequestBody Map<String,Object> map){
         ResponseResult results=ResponseResult.getResponseResult();
         if (map!=null&&map.get("id")!=null){
+            //根据id删除角色
             rService.deleteRoleById(Long.parseLong(map.get("id").toString()));
             results.setCode(200);
             results.setSuccess("角色删除成功");
@@ -64,7 +68,6 @@ public class RoleController {
         }
         return results;
     }
-
     /**
      * 添加角色
      * @param role
@@ -88,7 +91,6 @@ public class RoleController {
         }
         return  results;
     }
-
     /**
      * 绑定菜单
      * @param map
@@ -99,6 +101,7 @@ public class RoleController {
     public ResponseResult putMenuByRoleId(@RequestBody Map<String,Object> map){
         ResponseResult results=ResponseResult.getResponseResult();
         if (map!=null){
+            //绑定权限
             rService.putMenuByRoleId(map);
             results.setCode(200);
             results.setSuccess("保存成功");

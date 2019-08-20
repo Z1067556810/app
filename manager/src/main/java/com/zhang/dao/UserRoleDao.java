@@ -2,7 +2,9 @@ package com.zhang.dao;
 
 import com.zhang.entity.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.data.jpa.repository.Query;
+
+import javax.transaction.Transactional;
 
 /**
  * @author 张会丽
@@ -10,5 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 public interface UserRoleDao extends JpaRepository<UserRole,Long> {
+    //根据用户id删除角色
     public void deleteByUserId(Long userId);
 }

@@ -13,6 +13,7 @@
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/jwt/JWTUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/random/VerifyCodeUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/AESUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/HttpUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/MD5.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/common/src/main/java/zhang/utils/UID.java" afterDir="false" />
@@ -27,8 +28,6 @@
       <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/manager.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
@@ -36,7 +35,6 @@
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/manager/src/main/resources/application.properties" afterDir="false" />
@@ -44,12 +42,13 @@
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/EmailUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/SmsUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/sso/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../xiangmu_zhl/.idea/uiDesigner.xml" afterDir="false" />
@@ -723,14 +722,11 @@
       <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/qingsongk.mp3" afterDir="false" />
       <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/tishiyin.mp3" afterDir="false" />
       <change afterPath="F:/vue/xiangmu_zhl/static/tishiyin/yiliuyan.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Configs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GateWayFilters.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
@@ -738,15 +734,15 @@
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/ResponseResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/base/BaseAuditable.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/base/BaseAuditable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/RoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sso/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sso/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" afterDir="false" />
@@ -769,57 +765,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -836,56 +797,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java" />
-        <option value="$PROJECT_DIR$/pojo/pom.xml" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/base/BaseAuditable.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/MenuInfo.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/RoleInfo.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/UserInfo.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LongService.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/User.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/pojo/entity/Menu.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/PerManApp.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" />
         <option value="$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml" />
         <option value="$PROJECT_DIR$/manager/src/main/resources/aaa.xml" />
         <option value="$PROJECT_DIR$/manager/src/main/resources/mapper/a.xml" />
         <option value="$PROJECT_DIR$/sso/src/main/resources/a/a.xml" />
         <option value="$PROJECT_DIR$/sso/src/main/resources/a.xml.tld" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/zhang/jwt/JWTUtils.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" />
-        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/sso/pom.xml" />
         <option value="$PROJECT_DIR$/manager/pom.xml" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/util/HttpUtils.java" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleMenuService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserRoleService.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/manager/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java" />
-        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/sso/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java" />
+        <option value="$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java" />
         <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java" />
+        <option value="$PROJECT_DIR$/sso/pom.xml" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/EmailUtil.java" />
+        <option value="$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/SmsUtil.java" />
+        <option value="$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java" />
       </list>
     </option>
   </component>
@@ -902,11 +864,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="87" />
-    <option name="width" value="1673" />
-    <option name="height" value="875" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1325" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -915,63 +883,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demos" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zhang" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -981,22 +894,28 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565840631453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566281775947" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Nwt\eclipse\demos\sso\src\main\java\com\zhang\utils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zhang.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Nwt\eclipse\demos\sso\src\main\java\com\zhang\utils" />
       <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\service" />
       <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\dao" />
       <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang\controller" />
       <recent name="F:\Nwt\eclipse\demos\manager\src\main\java\com\zhang" />
-      <recent name="F:\Nwt\eclipse\demos\manager\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1011,7 +930,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Manage">
+  <component name="RunManager" selected="Spring Boot.GateWayServer">
     <configuration name="GateWayServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhang.GateWayServer" />
@@ -1071,7 +990,22 @@
       <workItem from="1565762031611" duration="6738000" />
       <workItem from="1565780343276" duration="1108000" />
       <workItem from="1565788527515" duration="881000" />
-      <workItem from="1565825413149" duration="9275000" />
+      <workItem from="1565825413149" duration="10106000" />
+      <workItem from="1565849100541" duration="9235000" />
+      <workItem from="1565864659794" duration="4633000" />
+      <workItem from="1565872334887" duration="1643000" />
+      <workItem from="1565913285582" duration="11910000" />
+      <workItem from="1565935479269" duration="19091000" />
+      <workItem from="1566001874742" duration="5834000" />
+      <workItem from="1566008167625" duration="449000" />
+      <workItem from="1566011386399" duration="3028000" />
+      <workItem from="1566127623958" duration="7264000" />
+      <workItem from="1566171182406" duration="15032000" />
+      <workItem from="1566194384057" duration="6378000" />
+      <workItem from="1566202682159" duration="2471000" />
+      <workItem from="1566212629757" duration="5710000" />
+      <workItem from="1566258212641" duration="2711000" />
+      <workItem from="1566280808940" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="后台">
       <created>1565353644416</created>
@@ -1080,16 +1014,23 @@
       <option name="project" value="LOCAL" />
       <updated>1565353644416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="后台">
+      <created>1565840902976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565840902977</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103348000" />
+    <option name="totallyTimeSpent" value="200577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.19101876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.17493297" />
       <window_info id="Structure" order="1" sideWeight="0.5020243" side_tool="true" weight="0.19101876" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1099,7 +1040,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49691835" visible="true" weight="0.30028328" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49262735" weight="0.29461756" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932975" weight="0.19688386" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1107,21 +1048,21 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030817" side_tool="true" weight="0.22535211" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3274648" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5073727" side_tool="true" weight="0.29461756" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32577905" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3274648" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.2724551" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.14678285" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1131,81 +1072,13 @@
     <MESSAGE value="后台" />
     <option name="LAST_COMMIT_MESSAGE" value="后台" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/random/VerifyCodeUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/exception/LoginException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/utils/TwitterIdWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/aaa.xml" />
-    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/mapper/a.xml" />
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a/a.xml" />
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/z.xml" />
     <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a.zml.tld" />
     <entry file="file://$PROJECT_DIR$/sso/src/main/resources/a.xml.tld" />
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/Manage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1216,52 +1089,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/base/BaseAuditable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Reslover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Configs.java" />
     <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GateWayFilters.java" />
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.7.RELEASE/spring-data-redis-2.0.7.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-13927">
@@ -1276,61 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-ribbon.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1418">
-          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1341,20 +1115,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/Sso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="551">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="953">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/zhang/utils/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java">
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="29">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/Reslover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/base/BaseAuditable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleMenuService.java" />
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserRoleService.java" />
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/GateWayServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="26" column="131" selection-start-line="26" selection-start-column="131" selection-end-line="26" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="24" column="73" lean-forward="true" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-ribbon.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/resources/application-gateway.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/filter/GlobalFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1363,107 +1250,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/RoleMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-71">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java">
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="551">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java">
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="364">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java">
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com/zhang/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="364">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java">
+    <entry file="file://$PROJECT_DIR$/sso/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="398">
+          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway/src/main/java/com/zhang/config/CsrfConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1504">
-          <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+        <state relative-caret-position="4342">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/RoleDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="319">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java">
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1674">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1724">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="39">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java">
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/dao/MenuDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="373">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" selection-start-line="13" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/EmailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso/src/main/java/com/zhang/utils/SmsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1315">
+          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1472,32 +1377,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="-205">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+        <state relative-caret-position="2823">
+          <caret line="103" column="18" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1506,8 +1397,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/MenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/RoleMenuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/dao/UserRoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="120" column="20" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manager/src/main/java/com/zhang/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1517,8 +1488,80 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -26,5 +26,6 @@ public class Role extends BaseAuditable {
     @Transient
     private List<User> userList;
 
-
+    @Transient
+    private String ids[];
 }

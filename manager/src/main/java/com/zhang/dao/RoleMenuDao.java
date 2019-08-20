@@ -2,7 +2,8 @@ package com.zhang.dao;
 
 import com.zhang.entity.RoleMenu;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.transaction.annotation.Transactional;
+
+import javax.transaction.Transactional;
 
 /**
  * @author 张会丽
@@ -10,6 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 public interface RoleMenuDao extends JpaRepository<RoleMenu,Long> {
-    public void  deleteByRoleId(Long roleId);
-    public void deleteByMenuId(Long MenuId);
+    //根据角色id删除
+    public void deleteByRoleId(Long roleId);
+    //根据菜单id删除
+    public void deleteByMenuId(Long menuId);
 }

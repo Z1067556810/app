@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Query;
  * @create 2019/8/9
  */
 public interface RoleDao extends JpaRepository<Role,Long> {
+    //根据用户ID获取权限
     @Query(value = "select br.* from base_user_role bur INNER JOIN base_role br ON bur.roleId=br.id where bur.userId=?1",nativeQuery = true)
     public Role role(Long userId);
 }

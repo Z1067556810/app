@@ -9,10 +9,7 @@ import com.zhang.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author 张会丽
@@ -33,11 +30,13 @@ public class LoginService {
      * @return
      */
     public User login(String loginname) {
-        User userInfo = uDao.findByLoginName(loginname);
-        if(userInfo != null){
-            Role role = rDao.role(userInfo.getId());
-            userInfo.setRole(role);
+        User user = uDao.findByLoginName(loginname);
+        if(user != null){
+            //获取权限
+            Role role = rDao.role(user.getId());
+            user.setRole(role);
             if(role != null){
+                //获取菜单
                 List<Menu> allMenus = mDao.getByRoleId(role.getId());
                 List<Menu> parList = new ArrayList<>();
                 for (Menu allMenu : allMenus) {
@@ -48,11 +47,11 @@ public class LoginService {
                 Map<String,String> map = new HashMap<>();
                 this.getForMenuInfo(parList,map,allMenus);
                 System.out.println(map);
-                userInfo.setAuthmap(map);
-                userInfo.setMenuList(parList);
+                user.setAuthmap(map);
+                user.setMenuList(parList);
             }
         }
-        return userInfo;
+        return user;
     }
 
     /**
@@ -62,20 +61,102 @@ public class LoginService {
      * @param allMenus
      */
     public void getForMenuInfo(List<Menu> list, Map<String, String> map,List<Menu> allMenus){
-        for (Menu menuInfo : list) {
-            if(menuInfo.getLeval() == 4){
-                map.put(menuInfo.getUrl(),"");
+        for (Menu menu : list) {
+            if(menu.getLeval() == 4){
+                map.put(menu.getUrl(),"");
             }
             List<Menu> chilMenus=new ArrayList<>();
             for (Menu allMenu:allMenus){
-                if (menuInfo.getId() == allMenu.getParentId()){
+                if (menu.getId() == allMenu.getParentId()){
                     chilMenus.add(allMenu);
                 }
             }
-            menuInfo.setMenuList(chilMenus);
-            if(menuInfo.getMenuList().size() > 0){
-                getForMenuInfo(menuInfo.getMenuList(),map,allMenus);
+            menu.setMenuList(chilMenus);
+            if(menu.getMenuList().size() > 0){
+                getForMenuInfo(menu.getMenuList(),map,allMenus);
             }
         }
     }
+	/**
+     * 根据手机号登录
+     * @param tel
+     * @return
+     */
+    public User getUserByTel(String tel){
+        //获取用户信息
+        User byLoginName = uDao.findUserByTel(tel);
+        System.out.println("service:"+tel+"用户信息："+byLoginName);
+        if(byLoginName!=null){
+            //将所有角色赋值给用户
+            byLoginName.setRoleList(rDao.findAll());
+            //获取用户的角色信息
+            Role roleInfoByUserId = rDao.role(byLoginName.getId());
+            //设置用户的角色信息
+            byLoginName.setRole(roleInfoByUserId);
+            if (roleInfoByUserId!=null){
+                //获取用户的权限信息
+                List<Menu> firstMenuInfo = mDao.getByRoleId(roleInfoByUserId.getId());
+                List<Menu> parList=new ArrayList<>();
+                for (Menu allMenu:firstMenuInfo) {
+                    if (allMenu.getLeval()==1) {
+                        parList.add(allMenu);
+                    }
+                }
+                //递归的查询子菜单权限
+                Map<String,String> authmap=new Hashtable<>();
+                this.getForMenuInfo(parList,authmap,firstMenuInfo);
+                System.out.println(authmap);
+                //设置菜单的子权限
+                byLoginName.setAuthmap(authmap);
+                byLoginName.setMenuList(parList);
+            }
+        }
+        return byLoginName;
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    public Map<String,Object> getUserById(String id){
+        Map<String, Object> userById = uDao.getUserById(id);
+        return userById;
+    }
+    /**
+     * 根据code码查询用户
+     * @param code
+     * @return
+     */
+    public User findUserByCode(String code){
+        return uDao.findUserByCode(code);
+    }
+
+    /**
+     * 根据code码更改用户密码
+     * @param password
+     * @param code
+     */
+    public void updatePasswordByCode(String password,String code){
+        uDao.updatePasswordByCode(password,code);
+    }
+
+    /**
+     * 根据用户ID修改code码
+     * @param id
+     * @param code
+     */
+    public void updateCodeById(Long id,String code){
+        uDao.updateCodeById(code,id);
+    }
+
+    /**
+     * 根据email查询用户
+     * @param email
+     * @return
+     */
+    public User getUserByEmail(String email){
+        return uDao.findUserByEmail(email);
+    }
+
 }

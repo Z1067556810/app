@@ -8,14 +8,17 @@ import com.zhang.entity.Menu;
 import com.zhang.entity.Role;
 import com.zhang.entity.User;
 import com.zhang.entity.UserRole;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.io.File;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 /*
@@ -46,6 +49,7 @@ public class UserService {
         if (map.get("page")!=null&&map.get("pageSize")!=null){
             page=Integer.parseInt(map.get("page").toString());
             pageSize=Integer.parseInt(map.get("pageSize").toString());
+            System.out.println("page:"+page+"pageSize:"+pageSize);
         }
         Page<User> mohu = uDao.findByUserNameLike("%" + map.get("mohu").toString() + "%", PageRequest.of(page, pageSize, Sort.by(Sort.Order.desc("updateTime"))));
         for (User user:mohu){
@@ -65,6 +69,11 @@ public class UserService {
         byId.setMenuList(byParentId);
         return byId;
     }
+
+    /**
+     * 角色
+     * @return
+     */
     public List<Role> findAllRole() {
         List<Role> all = rDao.findAll();
         return all;
@@ -91,7 +100,7 @@ public class UserService {
      * @param userId
      * @param roleId
      */
-    public void purRoleByUserId(long userId,long roleId){
+    public void purRoleByUserId(Long userId,Long roleId){
         UserRole userRole=new UserRole();
         userRole.setRoleId(roleId);
         userRole.setUserId(userId);
@@ -116,7 +125,7 @@ public class UserService {
         int i = uDao.countByLoginName(loginName);
         return i;
     }
-    public List<Menu> getBrotherMenusByUrl(String url,String roleId) {
+    public List<Menu> getBrotherMenusByUrl(String url, String roleId) {
         List<Menu> byUrlAndRoleIdBrotherMenus = mDao.getByUrlAndRoleIdBrotherMenus(url, Long.parseLong(roleId));
         return byUrlAndRoleIdBrotherMenus;
     }
